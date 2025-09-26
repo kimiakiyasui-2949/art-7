@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>スライドショー</title>
+  <link rel="stylesheet" href="styles.css">
+
+ 
+
+</head>
+<body>
+ 
+<div class="header">
+  <div><a href="index.html" class="top">top</a></div>
+  <h1>Product Mode</h1>
+</div>
+ <div class="hei"><h3>NEXT</h3></div>
+
+  <div>
+  <div class="word massege"><a href="massege.html"class="massege-2">massege</a></div>
+  <div class="word reason"><a href="reason.html"class="reason">reason</a></div>
+  <div class="word art-space"><a href="art-space.html">art space</a></div>
+  <div class="word contact"><a href="contact.html" class="word-2
+    ">contact</a>
+       <div class="works"><a href="works.html" class="word
+    ">works</a></div>
+  </div>
+   
+  <!-- 左上ハンバーガーメニュー -->
+
+    <style>
+  body {
+ 
+   overflow-x: hidden;
+  margin: 0;
+  padding: 0
+  font-family: sans-serif;
+  background-color: #fff;
+    margin: 0;
+  padding: 0;
+  background-image: url('a-to.jpg'); /* ← ここに画像ファイル名を指定 */
+  background-size: cover;      /* 画面に合わせてリサイズ */
+  background-position: center; /* 中央寄せ */
+  background-repeat: no-repeat; /* 繰り返しなし */
+  height: 100vh;    
+}
+
+.hei{
+  align-items: center;
+  margin: 350px 0 0 0 ;
+  position: 80px;
+  height: 100px;
+  color: ;
+  background-color: rgb(198, 203, 182);
+  color: #0c0c0c;
+
+  
+}
+   .header {
+  display: flex;
+  justify-content: space-between; /* 右側にメニューを配置 */
+  align-items: center;
+  padding: 0 40px;
+}
+.top{
+ text-align: left;
+ margin: 0 auto 0 0 ;
+ padding: 0;
+padding-left: -10px;
+padding-right: 18px;
+font-size: 25px;
+color: #e8ef0f;
+}
+
+.works,a{
+  color: antiquewhite;
+}
+
+h1 {
+
+  margin: 0 auto;
+  font-size: 30px;
+  text-align: center;
+}
+
+
+
+
+
+
+
+.word {
+    position: absolute;
+    color: black;
+    animation: moveLR 19s linear infinite;
+  }
+  .works,a{
+    color:
+  
+    text-decoration: none;
+    margin-top: 44px;
+    font-size: 24px;
+    margin-bottom: 0ch;
+    margin-left: 100px;
+  
+  }
+ .wordworks,a:hover{
+  color: rgba(243, 207, 5, 0.947);
+ }
+ .word,a {
+  font-size:30px ; 
+  
+ }
+ .works{
+  padding: 0px;
+ }
+.word massege,{
+  color: rgb(183, 117, 31);
+ }
+ 
+  @keyframes moveLR {
+    0%   { left: 5%; }
+    50%  { left: 70%; }
+    100% { left: 20%; }
+  }
+
+  .art-space,a {
+    font-size: 38px;
+    top: 40%;
+    animation-delay: 0s;
+  }
+
+  .reason {
+    font-size: 24px;
+    top: 32%;
+    animation-delay: 0.5s;
+  }
+    .works {
+    font-size: 8px;
+    top: 20%;
+    left: 30%;
+    margin-right: 20px;
+    animation-delay: 2.0s;
+  }
+.word-2{
+  color: #ada3a3;
+}
+.word-2:hover{
+  color: blanchedalmond;
+}
+  .massege {
+    
+    font-size: 10px;
+    top: 20%;
+    animation-delay: 1.5s;
+    
+  }
+.reason{
+  color: #333;
+}
+.reason:hover{
+  color: rgba(134, 85, 214, 0.486);
+
+}
+.massege-2{
+  color: #333;
+}
+.massege-2:hover{
+  color: rgba(134, 85, 214, 0.486);
+
+}
+  .contact{
+    font-size: 8px;
+    top: 25%;
+    animation-delay: 2s;
+    margin-left: 14%;
+  }
+
+  h1{
+    background-color: rgb(226, 231, 94);
+    width: 100%;
+  }
+
+  .menu-btn.close span:last-child {
+    transform: rotate(-45deg);
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .word {
+    
+  }
+.massege,a{
+    color: rgb(147, 171, 192);
+}
+  .art-space,
+  .reason,
+  .contact,
+  .works {
+    font-size: 1.2rem;
+    top: auto;
+    position: static;
+    display: block;
+    margin: 1.2rem auto;
+    text-align: left;
+    
+  }
+
+  
+  }
+}
+    
+
+    </style>
+    
