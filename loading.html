@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="refresh" content="3;url=index.html">
+  <title>Loading...</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      background-color: #0d0000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+    .video{
+        text-align: center;
+        width:30%;
+        margin-bottom: 150px;
+        margin-left: px;
+
+    }
+    .fade-text {
+       text-align: center;
+      color: white;
+      font-size: 2rem;
+      opacity: 0;
+      animation: fadeIn 2s ease-in forwards;
+      margin-left: 100px;
+      
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.95); }
+      to { opacity: 1; transform: scale(1); }
+    }
+  </style>
+
+  <script>
+    // ページ読み込み後3秒で index.html に移動
+    window.addEventListener('load', () => {
+      setTimeout(() => {
+        window.location.href = "index.html";
+      }, 3000);
+    });
+  </script>
+</head>
+<body>
+    <div class="video">
+<video src="for.mp4"loop muted playsinline autoplay class="video"></video>
+</div>
+  <div class="fade-text">Welcome to art in day life</div>
+</body>
+</html>
+
