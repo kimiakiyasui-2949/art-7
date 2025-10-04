@@ -4,8 +4,36 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="refresh" content="3;url=index.html">
   <title>Loading...</title>
+  <!DOCTYPE html>
+<html lang="ja">
+
+  <title>Loading...</title>
+  <style>
+    body {
+      margin: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background: black;
+      color: white;
+      font-size: 24px;
+      font-family: 'Georgia', serif;
+    }
+  </style>
+  <script>
+    // 3秒後にindex.htmlへ
+    setTimeout(() => {
+      window.location.href = "index.html";
+    }, 3000);
+  </script>
+</head>
+<body>
+  <div>Loading...</div>
+</body>
+</html>
+
   <style>
     html, body {
       margin: 0;
